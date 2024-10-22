@@ -1,10 +1,14 @@
 # frozen_string_literal: true
 
-# Colorize player X: blue, player O: red
-require_relative 'colorize'
+require 'colorize'
 
-# Create 2 players, get their input, reflect on board
+# players.rb
+class Players
+  attr_accessor :symbol1, :symbol2
 
-# Randomize who is X and who is O
-
-# Update the players results
+  def initialize
+    symbols = ['X'.colorize(:blue), 'O'.colorize(:red)].shuffle
+    @symbol1 = symbols[0]
+    @symbol2 = symbols[1]
+  end
+end
