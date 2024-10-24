@@ -10,7 +10,6 @@ class Board
 
   def display_board
     <<~BOARD
-
        #{@cells[0]} | #{@cells[1]} | #{@cells[2]}
       ---+---+---
        #{@cells[3]} | #{@cells[4]} | #{@cells[5]}
@@ -20,4 +19,3 @@ class Board
     BOARD
   end
 end
-
