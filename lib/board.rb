@@ -8,7 +8,7 @@ class Board
     @cells = (1..9).to_a
   end
 
-  def display_board
+  def display
     <<~BOARD
        #{@cells[0]} | #{@cells[1]} | #{@cells[2]}
       ---+---+---

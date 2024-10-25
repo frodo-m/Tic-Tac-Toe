@@ -20,7 +20,7 @@ class Players
     puts 'Player #1 name:'
     name_one = gets.chomp
 
-    puts 'Player #2 name:'
+    puts 'Player #2 name: [If Computer Press Enter]'
     name_two = gets.chomp
 
     @names = [name_one, name_two]
